@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,700&family=Work+Sans:wght@100;300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+
+
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="../photography_portfolio/assets/img/Screenshot 2023-12-30 at 7.26.34 PM.png" alt=""></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio-section">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="full-width-image">
+        <img src="../photography_portfolio/assets/img/6A02D885-3208-4067-8F61-17FA912BAFB9_1_201_a.jpeg" alt="Full Width Image">
+        <div class="text-overlay">Muhammad Arsalan Amjad</div>
+      </div>
+
+
+
+      <div class="gallery" id="portfolio-section">
+
+        
+      <div class="image-container">
+        <div class="image-box">
+          <img src="../photography_portfolio/assets/img/8C5CB3BA-71BD-4E6F-923C-0F1D814CC04F_1_105_c.jpeg" alt="Image 1" onclick="openLightbox(this.src)">
+          <img src="../photography_portfolio/assets/img/79320248-6499-4CC4-9B65-FF501785A10B_1_105_c.jpeg" alt="Image 1" onclick="openLightbox(this.src)">
+        </div>
+        <div class="image-box_oldlhr">
+          <img src="../photography_portfolio/assets/img/18DA644A-2D62-45A7-97F3-063635951E4E_1_201_a.jpeg" alt="Image 2" onclick="openLightbox(this.src)">
+          <img src="../photography_portfolio/assets/img/4DA3A913-78CF-4171-8DE5-27285142C0C2.jpeg" alt="" onclick="openLightbox(this.src)">
+          <img src="../photography_portfolio/assets/img/A3A00158-71BC-4AE8-8FC5-BEFDCAA9DDEB_1_105_c.jpeg" alt="" onclick="openLightbox(this.src)">
+        </div>
+        <div class="image-box">
+          <img src="../photography_portfolio/assets/img/91F98006-94FC-47EF-94FE-31B1BE92F225_1_105_c.jpeg" alt="Image 3" onclick="openLightbox(this.src)">
+          <img src="../photography_portfolio/assets/img/0C86F8AE-EB28-4C91-8683-DAE55D764DA2_1_105_c.jpeg" alt="Image 4" onclick="openLightbox(this.src)">
+        </div>
+        <div class="image-box_lioness">
+          <img src="../photography_portfolio/assets/img/5DF6CB5F-B85F-45A6-B336-BB9193CFA8A7_1_105_c.jpeg" alt="Image 6" onclick="openLightbox(this.src)">
+          <img src="../photography_portfolio/assets/img/7CC24BA2-FB9F-4F4C-946D-DA9B7B6AA1FD_1_105_c.jpeg" alt="Image 5" onclick="openLightbox(this.src)">
+          <img src="../photography_portfolio/assets/img/2617E116-FDCC-4C64-B047-C08066E369D9.jpeg" alt="" onclick="openLightbox(this.src)">
+        </div>
+  
+        <div class="image-box_night">
+  <img src="../photography_portfolio/assets/img/D71F460B-E63E-4877-AA3E-5E98FAFCA99F_1_105_c.jpeg" alt="Image 4" onclick="openLightbox(this.src)">
+  <img src="../photography_portfolio/assets/img/FD9CE946-CE4D-4061-8810-50A91F25413A_1_105_c.jpeg" alt="Image 5" onclick="openLightbox(this.src)">
+  <img src="../photography_portfolio/assets/img/68A49282-65D1-4A1E-A7EE-632655BFBEA3.jpeg" alt="Image 6" onclick="openLightbox(this.src)">
+  <img src="../photography_portfolio/assets/img/0E942E8F-5403-4758-944F-D3D9B0D7C9AF_1_105_c.jpeg" alt="Image 5" onclick="openLightbox(this.src)">
+  <img src="../photography_portfolio/assets/img/529A2931-C628-4FF0-9412-0161E88EAB1D_1_105_c.jpeg" alt="" onclick="openLightbox(this.src)">
+  
+        </div>
+      
+      </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+    <div id="lightbox" class="lightbox" style="display:none;">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img class="lightbox-content" id="lightbox-image" src="">
+      <div id="caption"></div>
+  </div>
+  
+
+  <div class="contact" id="contact-section">
+    <h1>Contact Me</h1>
+    <div class="icons">
+      <a href="https://www.instagram.com/weltmeister_shoots/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="mailto:arsalanmalik900@outlook.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+
+
+function openLightbox(src) {
+    document.getElementById('lightbox').style.display = 'block';
+    document.getElementById('lightbox-image').src = src;
+}
+
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
+
+
+document.querySelectorAll('.image-box img').forEach(image => {
+    image.addEventListener('click', () => {
+        openLightbox(image.src);
+    });
+});
+
+document.querySelectorAll('a.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+</script>
+
+
+</body>
+</html>

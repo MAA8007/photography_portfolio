@@ -1,0 +1,202 @@
+body{
+    font-family: 'Raleway';
+    font-weight: 300;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+
+.custom-navbar .navbar-nav .nav-link {
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.custom-navbar .navbar-brand {
+    color: white;
+    padding: 8px 12px; 
+
+}
+
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+.logo{
+    width: 6pc;
+    height: 2pc;
+    max-width: 100px; 
+
+}
+.full-width-image {
+    position: relative;
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .full-width-image img {
+    width: 100%;
+    height: auto; 
+  }
+  
+  .text-overlay {
+    font-size: 4vw;
+    position: absolute;
+    top: 35%; 
+    left: 0;
+    width: 100%; 
+    transform: translateY(-35%); 
+    color: white; 
+    font-size: 60px; 
+    font-weight:bolder;
+    padding: 0 15px; 
+    box-sizing: border-box;
+  }
+
+  
+  
+  
+.image-container {
+    grid-template-columns: repeat(auto-fill, minmax(18vw, 1fr));
+    grid-auto-rows: minmax(10vh, auto);
+
+
+    display: grid;
+    grid-gap: 4px;
+}
+
+
+.image-box img {
+    width: 100%;
+    height: 49.7%; 
+    display: block;
+    object-fit: cover;
+    margin-top: 4px;
+}
+
+
+.image-box_lioness img {
+    width: 100%;
+    height: 33.333%; 
+    display: block;
+    object-fit: cover; 
+    padding-top: 4px;
+}
+
+.image-box_oldlhr img {
+    width: 100%;
+    height: 33%; 
+    display: block;
+    object-fit: cover;
+    margin-top: 4px;
+}
+
+.image-box_night img {
+    width: 100%;
+    height: 19.7%; 
+    display: block;
+    object-fit: cover; 
+    margin-top: 4px;
+}
+
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: visibility 0s, opacity 35000ms ease;
+}
+
+.lightbox-content {
+    display: block;
+    max-width: 90%; 
+    max-height: 80vh; 
+    width: auto; 
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.close {
+    font-size: 5vw;
+    padding-left: 300px;
+    padding-top: 200px;
+
+
+    color: white;
+    cursor: pointer;
+}
+
+
+.image-box img:hover, .image-box_lioness img:hover, .image-box_oldlhr img:hover, .image-box_night img:hover{
+    opacity: 0.9; 
+    border: 3px solid white;
+    transition: opacity 0.3s ease, border 0.3s ease; 
+    cursor:pointer ;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr));
+    }
+    .text-overlay {
+        font-size: 5vw;
+    }
+    .close {
+        font-size: 6vw;
+    }
+
+    .lightbox {
+        display: none!important;
+    }
+
+    .image-box img:hover, .image-box_lioness img:hover, .image-box_oldlhr img:hover, .image-box_night img:hover {
+        opacity: 1; 
+        border: none;
+        transition: none;
+        cursor: auto; 
+    }
+
+}
+
+.contact{
+    margin: 3.5pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icons i{
+    font-size: 2pc;
+    color: white;
+    padding: 10px;
+}
+
+.icons i:hover{
+    opacity: 0.6; 
+    transition: opacity 0.3s ease, border 0.3s ease; 
+    cursor:pointer ;
+}
