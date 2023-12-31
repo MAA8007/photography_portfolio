@@ -17,11 +17,7 @@ To get a local copy up and running, follow these simple steps:
 1. Clone the repository to your local machine:
 git clone https://github.com/MAA8007/photography_portfolio.git
 
-2. Navigate to the project directory:
-cd photography_portfolio
-
-
-3. Open the `index.html` file in a web browser to view the website.
+2. Open the `index.html` file in a web browser to view the website.
 
 ## Technologies Used
 
